@@ -17,7 +17,7 @@ This project demonstrates the implementation of deep learning models for **image
 2. **Butterfly Classification**: Identifying different species of butterflies.
 3. **Brain Tumor Classification**: Classifying brain MRI images into tumor or non-tumor categories.
 
-Each classification task uses Convolutional Neural Networks (CNNs) to achieve high accuracy and performance.
+Each classification task uses Convolutional Neural Networks (CNNs) as well as transfer learning to achieve high accuracy and performance.
 
 ## Features
 
@@ -116,11 +116,11 @@ model.fit(train_generator, epochs=10, validation_data=validation_generator)
 
 Below are the performance metrics for each classification task:
 
-| Task                       | Model          | Accuracy | Precision | Recall |
-|----------------------------|----------------|----------|-----------|--------|
-| Intel Image Classification  | Custom CNN     | 85%      | 0.86      | 0.84   |
-| Butterfly Classification    | VGG16 (Transfer Learning) | 90%  | 0.89   | 0.88   |
-| Brain Tumor Classification  | ResNet50 (Transfer Learning) | 94% | 0.93 | 0.94   |
+| Task         | Model                        | Accuracy | Loss |
+|--------------|------------------------------|----------|------|
+| Intel Image  | Custom CNN                   | 92%      | 23%  |
+| Butterfly    | VGG16 (Transfer Learning)    | 81%      | 63%  |
+| Brain Tumor  | ResNet50 (Transfer Learning) | 87%      | 40%  |
 
 Example images from the dataset with predictions:
 
